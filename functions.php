@@ -102,6 +102,10 @@ add_action( 'widgets_init', 'erc_widgets_init' );
 function erc_scripts() {
 	wp_enqueue_style( 'erc-style', get_template_directory_uri() . '/assets/css/main.css' );
 
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script( 'erc-js', get_template_directory_uri() . '/assets/js/main.js', 'jquery' );
+
 	wp_enqueue_script( 'erc-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'erc-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
