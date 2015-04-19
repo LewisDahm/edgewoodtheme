@@ -136,3 +136,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Add Soil Modules
+ */
+add_theme_support('soil-jquery-cdn');
+add_theme_support('soil-clean-up');
+// add_theme_support('soil-nav-walker'); giving us an "empty needle" error message
+add_theme_support('soil-relative-urls');
+add_theme_support('soil-js-to-footer');
+add_theme_support('soil-disable-asset-versioning');
